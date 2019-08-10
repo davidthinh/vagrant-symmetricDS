@@ -7,7 +7,7 @@ Vagrant.configure(2) do |config|
   else
     config.vm.synced_folder ".", "/vagrant"
   end
-  (1..2).each do |i|
+  (1..3).each do |i|
     config.vm.define "pcmk-#{i}" do |d|
       d.vm.box = "bento/centos-7.6"
       d.vm.hostname = "pcmk-#{i}"

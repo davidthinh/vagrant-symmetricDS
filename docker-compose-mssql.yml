@@ -8,7 +8,7 @@ services:
     image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
-    - $PWD/msssqldata:/var/opt/mssql:z
+#    - $PWD/msssqldata:/var/opt/mssql:z
     environment:
     - SA_PASSWORD=1qaz2wsx#EDC
     - ACCEPT_EULA="Y"

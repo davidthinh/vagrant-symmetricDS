@@ -14,10 +14,11 @@ sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 sudo rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 sudo yum remove -y  docker \
                   docker-common \
-                  docker-engine
+                  docker-engine  
 sudo yum install -y yum-utils \
   device-mapper-persistent-data \
-  lvm2
+  lvm2  unzip  vim  \
+  java-1.8.0-openjdk java-1.8.0-openjdk-devel
 
 sudo yum-config-manager \
     --add-repo \

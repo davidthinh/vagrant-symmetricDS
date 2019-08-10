@@ -1,0 +1,21 @@
+version: '3.7'
+# default account: sys 
+# default password: Oradoc_db1
+# Service: ORCLPDB1.localdomain
+# JDBC driver: Oracle Thin
+services:
+  oracle:
+    container_name: oracle
+    image: store/oracle/database-enterprise:12.2.0.1
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+  # - $PWD/oracle/data:/ORCL
+    environment:
+    - DB_SID=ORCLCDB
+    - DB_PDB=ORCLPDB1
+    - DB_MEMORY=2GB
+    - DB_DOMAIN=localdomain
+    - TZ=Asia/Taipei
+    ports: 
+     - "1521:1521" 
+     - "5500:5500" 

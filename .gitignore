@@ -10,3 +10,4 @@ vagrant.out
 openrc
 pcmk-*
 *.zip
+symmetric*/
