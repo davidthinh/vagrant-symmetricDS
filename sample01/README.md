@@ -145,7 +145,7 @@ engine.name=sunclient-003
 db.driver=oracle.jdbc.driver.OracleDriver
  
 # The JDBC URL used to connect to the database
-db.url=jdbc:oracle:thin:@192.168.122.102:1521:XE
+db.url=jdbc:oracle:thin:@19.168.122.102:1521:ORCLPDB1.localdomain
  
 # The user to login as who can create and update tables
 db.user=apps
