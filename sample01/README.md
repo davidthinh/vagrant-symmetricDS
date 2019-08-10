@@ -180,7 +180,15 @@ initial.load.create.first=true
 
 使用Command Mode，進入[SymmectricDS Home]\engines，執行
 ..\bin\symadmin --engine sunserver-000 create-sym-tables
+
+在 192.168.122.101
+```bash
  sh ../bin/symadmin  --engine sunserver-000 create-sym-tables
+```
+在 192.168.122.102
+```bash
+ sh ../bin/symadmin  --engine sunclient-003 create-sym-tables
+```
 
 執行後，會自動在資料庫中建立許多sym開頭的Table跟index。
 
