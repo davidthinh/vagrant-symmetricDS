@@ -283,7 +283,7 @@ values('symmetric_test_bus','client_2_server', 200, current_timestamp, current_t
 ```bash
 sh ../bin/sym -port  7070
 sh ../bin/sym -port  8888
-```bash
+```
 
 ##### 啟動Master Node
 使用Command Mode進入[Master Node SymmetricDS Home]/engines
