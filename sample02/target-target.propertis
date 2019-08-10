@@ -1,0 +1,10 @@
+engine.name=target
+group.id=target
+external.id=target
+sync.url=http://symds_target:31415/sync/target
+registration.url=http://symds_source:31415/sync/source
+db.driver=org.postgresql.Driver
+db.url=jdbc:postgresql://target:5432/target
+db.user=target
+db.password=target
+rest.api.enable=true

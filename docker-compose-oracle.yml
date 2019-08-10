@@ -3,6 +3,9 @@ version: '3.7'
 # default password: Oradoc_db1
 # Service: ORCLPDB1.localdomain
 # JDBC driver: Oracle Thin
+# source /home/oracle/.bashrc; sqlplus /nolog
+# connect sys as sysdba 
+# select * from all_users;
 services:
   oracle:
     container_name: oracle
