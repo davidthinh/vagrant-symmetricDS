@@ -295,5 +295,6 @@ sh ../bin/sym -port  8080
 
 這裡指定的Port需跟properties裡sync.url設定的Port一樣
 
-實作結果
+###實作結果
+
 <img src=image2.png />
