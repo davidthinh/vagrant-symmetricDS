@@ -10,7 +10,7 @@ O/S：均是Centos。
 1. sun-client3 node: 192.168.122.102:1521
 
 
-image::image1.jpg[]
+<img src=image1.png />
 
 ## 程式安裝
 安裝方式很簡單，只要將壓縮檔解開後放到任意處即可。
@@ -296,4 +296,4 @@ sh ../bin/sym -port  8080
 這裡指定的Port需跟properties裡sync.url設定的Port一樣
 
 實作結果
-image::image2.jpg[]
+<img src=image2.png />
