@@ -7,7 +7,7 @@ Vagrant.configure(2) do |config|
   else
     config.vm.synced_folder ".", "/vagrant"
   end
-  (1..3).each do |i|
+  (1..2).each do |i|
     config.vm.define "pcmk-#{i}" do |d|
       d.vm.box = "bento/centos-7.6"
       d.vm.hostname = "pcmk-#{i}"
@@ -15,7 +15,7 @@ Vagrant.configure(2) do |config|
       d.vm.provision :shell, path: "post-deploy.sh",run: "always"
       fileName2 =  "pcmk-#{i}/pcmk-#{i}_disk2.vdi"      
       d.vm.provider "virtualbox" do |v|
-        v.memory = 1536
+        v.memory = 2536
         v.cpus = 1
         unless File.exist?(fileName2)
           v.customize ['createhd', '--filename', fileName2,'--size', 1 * 20480]

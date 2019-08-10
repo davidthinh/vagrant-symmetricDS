@@ -14,7 +14,6 @@ sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 sudo rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 sudo yum remove -y  docker \
                   docker-common \
-                  docker-selinux \
                   docker-engine
 sudo yum install -y yum-utils \
   device-mapper-persistent-data \
@@ -31,3 +30,10 @@ sudo  systemctl enable docker
 
 sudo  systemctl start docker
 
+sudo usermod -aG  docker vagrant
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose

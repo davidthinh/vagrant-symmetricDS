@@ -9,3 +9,4 @@ vagrant.out
 *.img
 openrc
 pcmk-*
+*.zip
